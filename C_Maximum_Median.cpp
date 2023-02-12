@@ -16,8 +16,12 @@ bool pos(vi &v, int mid, int k, int n)
     }
     return (k >= req);
 }
-void solve()
+int32_t main()
 {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
     int n, k;
     cin >> n >> k;
     vector<int> a(n);
@@ -37,19 +41,6 @@ void solve()
         else h = mid - 1;
     }
     cout << res;
-}
-int32_t main()
-{
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-
-    int testcases = 1;
-    // cin >> testcases;
-    while (testcases--)
-    {
-        solve();
-        cout << endl;
-    }
+    
     return 0;
 }
